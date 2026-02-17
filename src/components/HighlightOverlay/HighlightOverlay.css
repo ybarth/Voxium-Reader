@@ -1,0 +1,21 @@
+.highlight-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(59, 130, 246, 0.3);
+  border-radius: 3px;
+  transition: transform 0.08s ease-out, width 0.08s ease-out, height 0.08s ease-out;
+  z-index: 10;
+}
+
+/* Add a subtle glow effect */
+.highlight-overlay::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 5px;
+  background: transparent;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+  opacity: 0.6;
+}
